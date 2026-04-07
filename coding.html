@@ -1,0 +1,22 @@
+<html>
+<body>
+<h2>Penjumlahan Dua angka</h2>
+
+<input type="number" id="angka1" placeholder="Angka pertama">
+<input type="number" id="angka2" placeholder="Angka kedua">
+
+<button onclick="hitung()">hitung</button>
+
+<p>hasil: <span id="hasil"></span></p>
+
+<script>
+ function hitung() {
+   let a = document.getElementById("angka1").value;
+   let b = document.getElementById("angka2").value;
+
+   let hasil = Number(a) + Number(b);
+   document.getElementById("hasil").innerText = hasil;
+ }
+</script>
+</body>
+</html>
